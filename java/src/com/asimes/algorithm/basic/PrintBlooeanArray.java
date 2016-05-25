@@ -38,4 +38,9 @@ public class PrintBlooeanArray {
         }
     }
 
+    public static int log(int N){
+
+        return 0;
+    }
+
 }
