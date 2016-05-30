@@ -2,7 +2,7 @@ package pattern.decorator;
 
 /**
  * Created by lianglab on 2016/5/27.
- * ���� ��Ũ������
+ * 浓缩
  */
 public class Espresso extends Beverage {
     public Espresso() {

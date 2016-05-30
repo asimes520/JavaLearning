@@ -2,7 +2,7 @@ package pattern.decorator;
 
 /**
  * Created by lianglab on 2016/5/27.
- * ���� ������
+ *鲜奶油
  */
 public class Whip extends CondimentDecorator {
     Beverage beverage;
@@ -13,7 +13,7 @@ public class Whip extends CondimentDecorator {
 
     @Override
     public String getDescription() {
-        return beverage.getDescription()+"阿斯顿发水电费";
+        return beverage.getDescription()+", 鲜奶油";
     }
 
     @Override

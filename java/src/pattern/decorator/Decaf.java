@@ -2,11 +2,11 @@ package pattern.decorator;
 
 /**
  * Created by lianglab on 2016/5/27.
- * 功能 ：低咖啡因
+ * 浣庡挅鍟″洜
  */
 public class Decaf extends Beverage {
     public Decaf() {
-        description = "地擦飞鹰";
+        description = "浣庡挅鍟″洜";
     }
 
     @Override

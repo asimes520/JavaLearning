@@ -2,11 +2,11 @@ package pattern.decorator;
 
 /**
  * Created by lianglab on 2016/5/27.
- * ¹¦ÄÜ £ºÉîºæ±ºµÄ,ÊÊºÏÏ²»¶Å¨ºñ¿ÚÎ¶µÄ,Î¶µÀ»á±È½Ï¿à,
+ * æ·±çƒ˜ç„™
  */
 public class DarkRoast extends Beverage{
     public DarkRoast() {
-        description = "123";
+        description = "æ·±çƒ˜ç„™";
     }
 
     @Override

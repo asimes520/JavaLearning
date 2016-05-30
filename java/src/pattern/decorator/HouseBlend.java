@@ -6,7 +6,7 @@ package pattern.decorator;
  */
 public class HouseBlend extends Beverage{
     public HouseBlend() {
-        description = "爱上的服务";
+        description = "混合咖啡";
     }
 
     @Override

@@ -2,7 +2,7 @@ package pattern.decorator;
 
 /**
  * Created by lianglab on 2016/5/27.
- * 功能 ：调料 摩卡
+ * 鎽╁崱
  */
 public class Mocha extends CondimentDecorator {
     Beverage beverage;
@@ -13,7 +13,7 @@ public class Mocha extends CondimentDecorator {
 
     @Override
     public String getDescription() {
-        return beverage.getDescription() + "， 阿斯顿发文";
+        return beverage.getDescription() + ", 鎽╁崱";
     }
 
     @Override
