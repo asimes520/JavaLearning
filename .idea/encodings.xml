@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
-    <file url="file://$PROJECT_DIR$/java/src/pattern/decorator/Beverage.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/java/src/pattern/decorator/CondimentDecorator.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/java/src/pattern/decorator/Espresso.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/java/src/pattern/decorator/HouseBlend.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/java/src/pattern/decorator/Milk.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/java/src/pattern/decorator/StaabuzzCoffee.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/java/src/pattern/observer/CurrentConditionsDisplay.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/java/src/asimes/pattern/decorator/Beverage.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/java/src/asimes/pattern/decorator/CondimentDecorator.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/java/src/asimes/pattern/decorator/Espresso.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/java/src/asimes/pattern/decorator/HouseBlend.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/java/src/asimes/pattern/decorator/Milk.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/java/src/asimes/pattern/decorator/StaabuzzCoffee.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/java/src/asimes/pattern/observer/CurrentConditionsDisplay.java" charset="UTF-8" />
     <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>

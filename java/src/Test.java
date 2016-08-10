@@ -1,41 +1,57 @@
+import java.util.Arrays;
 
 public class Test {
-    public static void main(String[] args) {
+    //    public static void main(String[] args) {
 //        System.out.println("Hello World!");
 //        System.out.println(1);
 //        System.out.println(2);
-        A a1 = new A();
-        A a2 = new B();
-        B b = new B();
-        C c = new C();
-        D d = new D();
-        System.out.println(a1.show(b));
-        System.out.println(a1.show(c));
-        System.out.println(a1.show(d));
-        System.out.println(a2.show(b));
-        System.out.println(a2.show(c));
-        System.out.println(a2.show(d));
-        System.out.println(b.show(b));
-        System.out.println(b.show(c));
-        System.out.println(b.show(d));
+//    }
+    static {
+        System.out.println("Hello World!");
+    }
+
+    public Test() {
+        print("Hello World!");
+    }
+
+    static  int[] b = new int[5];
+
+    public static void main(String[] args) {
+//        String s = "OK";
+//        StringBuilder sb = new StringBuilder(s);
+//        String t = "OK";
+//        StringBuilder tb = new StringBuilder(t);
+//
+//        System.out.println(s.hashCode());
+//        System.out.println(sb.hashCode());
+//        System.out.println(t.hashCode());
+//        System.out.println(tb.hashCode());
+//        s = "Hello";
+//        System.out.println(s);
+//        System.out.println(t);
+//        System.out.println(sb);
+//        int a = 2;
+//        int er = 4;
+//        float f = 45.8f;
+//        System.out.println(a>>>3);
+//        int x =-3,y=-10;
+//        System.out.println(y%x);
+//        System.out.println(b[0]);
+//        boolean c = true?false:true == true ? false : true;
+//        System.out.println(c);
+//        Arrays.sort(b);
+        System.out.println("\t");
+    }
+
+    double fun(byte x,double y){
+        return (short)x/y*2;
+    }
+
+    /**
+     * Asimes
+     * @param param The String to be printed
+     */
+    public  void print(String param){
+        System.out.println(param);
     }
 }
-
-class A {
-public String show(D obj){
-        return ("A and D");
-        }
-public String show(A obj){
-        return ("A and A");
-        }
-        }
-class B extends A{
-public String show(B obj){
-        return ("B and B");
-        }
-public String show(A obj){
-        return ("B and A");
-        }
-        }
-class C extends B{}
-class D extends B{}
