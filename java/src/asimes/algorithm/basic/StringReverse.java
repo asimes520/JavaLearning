@@ -1,5 +1,6 @@
 package asimes.algorithm.basic;
 
+import java.util.Scanner;
 import java.util.Stack;
 import java.util.StringTokenizer;
 
@@ -9,7 +10,9 @@ import java.util.StringTokenizer;
  */
 public class StringReverse {
     public static void main(String[] args) {
-        String str = "Hello World Java My Love";
+        Scanner scanner = new Scanner(System.in);
+        String str = scanner.nextLine();
+//        String str = "Hello World Java My Love";
         str = charReverse1(str);
         System.out.println(str);
     }
