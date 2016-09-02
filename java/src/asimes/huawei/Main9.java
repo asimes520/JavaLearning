@@ -6,7 +6,7 @@ import java.util.TreeSet;
 
 /**
  * Created by lianglab on 2016/9/1.
- * 功能 ：
+ * 功能 ：给定一个数组，去重并排序
  */
 public class Main9 {
     public static void main(String[] args) {

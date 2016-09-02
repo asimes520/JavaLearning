@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 /**
  * Created by lianglab on 2016/9/1.
- * 功能 ：
+ * 功能 ：一堆硬币，一个机器人，如果是反的就翻正，如果是正的就抛掷一次，无穷多次后，求正反的比例。
  */
 public class Main7 {
     public static void main(String[] args) {
