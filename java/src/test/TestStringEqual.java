@@ -1,5 +1,7 @@
 package test;
 
+import org.junit.Test;
+
 /**
  * Created by Liangweiwei on 2016/8/11.
  */
@@ -11,5 +13,10 @@ public class TestStringEqual {
         System.out.println(a.equals(b));
         a = "cc";
         System.out.println(b);
+    }
+
+    @Test
+    public void test1(){
+
     }
 }
