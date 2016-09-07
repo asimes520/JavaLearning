@@ -39,6 +39,10 @@ public class Main18 {
         for (int i = 0; i < consumers.size(); i++) {
             Consumer con = consumers.get(i);
 
+
+
+
+
             for (int j = 0; j < tableMaxPeople.size(); j++) {
                 if(con.b <= tableMaxPeople.get(j)){
 
