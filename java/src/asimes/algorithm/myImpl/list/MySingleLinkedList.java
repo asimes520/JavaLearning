@@ -1,5 +1,7 @@
 package asimes.algorithm.myImpl.list;
 
+import java.util.Arrays;
+
 /**
  * Created by Asimes on 2016/9/12.
  */
@@ -56,7 +58,6 @@ public class MySingleLinkedList<T> {
     public T getFirst(){
         return head.getData();
     }
-
     @Override
     public String toString() {
 
