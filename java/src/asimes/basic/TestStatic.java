@@ -3,6 +3,9 @@ package asimes.basic;
 import asimes.util.StringUtil;
 
 import java.io.Serializable;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Objects;
 
 /**
  * Created by lianglab on 2016/9/6.
@@ -10,52 +13,28 @@ import java.io.Serializable;
  */
 public class TestStatic implements Serializable {
 
-    static final long serialVersionUID = 1231123123121L;
-
-    static class Inner{
-        public static void print(){
-            System.out.println("Hello");
-        }
-    }
-
-    public static int result = 1;
-
-    public static int testFinally1(){
-//       int result =1;
-        try {
-            result ++ ;
-            return result;
-        }finally {
-            result += 1;
-
-            System.out.println("Finally 1");
-
+    static class Sougou{
+        @Override
+        public int hashCode() {
+            return 1;
         }
     }
 
     public static void main(String[] args) {
-//        TestStatic ts = new TestStatic();
-//        Integer i = new Integer(1);
-//        ts.changeValue(i);
-//        System.out.println(i);
-//        String str = "OLD";
-//        ts.changeValue(str);
-//        double x=1,y=2,z=3;
-//        y+=z--/++x;
-//        System.out.println(y);
-//        String s = "nih么玩";
-//
-//        String re = StringUtil.judgeChineseCharacter(s);
-//
-//
-//        System.out.println(re);
-        System.out.println(testFinally1());
+//       String s1 = new String("abc");
+//        String s2 = "abc";
+//        String s3 = new String("abc");
+//        String s4 = "a"+"bc";
+//        String s5 = new String("a")+"bc";
+//        System.out.println(s4==s5);
+//        System.out.println(s1==s2);
+//        System.out.println(s1==s3);
+//        System.out.println(s2==s4);
+        String regex = "\\d+\\.\\d+\\.\\d+\\.\\d+";
+        String value= "192.168.1.1";
+        System.out.println(value.matches(regex));
+
     }
 
-    public void changeValue(Integer i){
-        i= new Integer(5);
-    }
-    public void changeValue(String str){
-        str= "NEW";
-    }
+
 }

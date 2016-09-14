@@ -3,7 +3,7 @@ package asimes.algorithm.myImpl.list;
 /**
  * Created by Asimes on 2016/9/12.
  */
-public class Node<T>{
+public class Node<T extends Comparable>{
     private T data;
     Node next = null;
 
@@ -13,5 +13,9 @@ public class Node<T>{
 
     public T getData() {
         return data;
+    }
+
+    public void setData(T data) {
+        this.data = data;
     }
 }
