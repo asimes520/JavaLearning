@@ -1,7 +1,5 @@
 package asimes.algorithm.myImpl.list;
 
-import java.util.Arrays;
-
 /**
  * Created by Asimes on 2016/9/12.
  * 单链表的实现类
@@ -114,6 +112,9 @@ public class MySingleLinkedList<T extends Comparable> {
         if (size() > 0) {
             Node<T> cur = head;
             for (int i = 0; i < size(); i++) {
+                if(cur == null){
+
+                }
                 sb.append(cur.getData() + ",");
                 cur = cur.next;
             }
@@ -123,5 +124,67 @@ public class MySingleLinkedList<T extends Comparable> {
         return sb.toString();
     }
 
+    /**
+     * 链表去重
+     */
+    public void deleteDuplecate(){
+        Node<T> cur = head;
+        Node<T> move;
+        while (cur!=null){
+            move = cur;
+            while (move.next!=null){
+                if(cur.getData().compareTo(move.next.getData()) == 0){
+                    move.next = move.next.next;
+                    length--;
+                }
+                move = move.next;
 
+            }
+            cur =cur.next;
+        }
+    }
+
+    /**
+     * 找出单链表中的倒数第K个元素
+     * @param k
+     * @return 返回找到的元素
+     *
+     * 方法：设置两个指针，快指针先走k-1步，然后慢指针块指针同时前移，当快指针到末尾的时候，慢指针正好到倒数第K个位置
+     *      不过由于此链表记录的有长度，所以也可以直接遍历到n-k个元素即可，见方法
+     */
+    public Node<T> findElementFromEnd(int k){
+        if (k<1 || k>size()){
+            return null;
+        }
+        int  i = 0;
+        Node<T> fast = head;
+        Node<T> slow = head;
+        for (i = 0; i < k; i++) {
+            fast = fast.next;
+        }
+        while (fast!=null){
+            fast=fast.next;
+            slow = slow.next;
+        }
+        return slow;
+    }
+
+    /**
+     * 找出单链表中的倒数第K个元素
+     * @param k
+     * @return 返回找到的元素
+     *
+     * 方法：
+     *      不过由于此链表记录的有长度，所以也可以直接遍历到n-k个元素即可
+     */
+    public Node<T> findElementFromEndByLength(int k){
+        if (k<1 || k>size()){
+            return null;
+        }
+       Node<T> cur = head;
+        for (int i = 0; i < size()-k; i++) {
+            cur = cur.next;
+        }
+        return cur;
+    }
 }

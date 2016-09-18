@@ -23,8 +23,15 @@ public class ListTest {
         linkedList1.add(new NodeImpl(8,"dd"));
         linkedList1.add(new NodeImpl(15,"ee"));
         linkedList1.add(new NodeImpl(7,"ff"));
+        linkedList1.add(new NodeImpl(6,"gg"));
+
         System.out.println(linkedList1);
         linkedList1.orderList(1);
         System.out.println(linkedList1);
+//        linkedList1.deleteDuplecate();
+//        System.out.println(linkedList1);
+        System.out.println( linkedList1.findElementFromEnd(linkedList1.size()));
+        System.out.println( linkedList1.findElementFromEndByLength(linkedList1.size()));
+
     }
 }
